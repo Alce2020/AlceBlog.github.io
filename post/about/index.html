@@ -102,7 +102,7 @@ window.onload=getCSS();
      			
 <li>
 	 
-	<a  href="/工具"> 工具箱</a></li>
+	<a  href="https://alce2020.github.io/AlceBlog.github.io/post/hello-gridea"> 工具</a></li>
 	
     
 
@@ -181,6 +181,8 @@ window.onload=getCSS();
 	<div class="wow rollIn author-info" style="visibility: visible; animation-name: rollIn;">
 	<div class="author-avatar pull-left"><img src="https://alce2020.github.io/AlceBlog.github.io//images/avatar.png" ></div>
  
+	<div class="author-description"><div class="author-title"><div class="author-link" rel="author">李静</div></div>
+
 
 		</div>
 		
@@ -190,6 +192,31 @@ window.onload=getCSS();
 
 <div id="marlin_lite_about_widget-2" class="wow bounceInUp widget marlin_lite_about_widget" data-wow-delay="0.1s">
 		
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'efb7b808de0eb56f579c',
+    clientSecret: '7a41284f2933c37f97569421b8e8d727dfc4bd68',
+    repo: 'AlceBlog.github.io',
+    owner: 'Mr.L',
+    admin: ['Mr.L'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+          
         
 		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='https://alce2020.github.io/AlceBlog.github.io//media/scripts/Valine.min.js'></script>
